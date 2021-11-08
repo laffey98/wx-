@@ -1,0 +1,8 @@
+<navigator url="/pages/freelist/freelist?cid={{'study'}}" > <text>约自习</text> </navigator>
+<navigator url="/pages/freelist/freelist?cid={{'car'}}" > <text>拼车招募</text></navigator>
+<navigator url="/pages/freelist/freelist?cid={{'diu'}}" > <text>失物招领\n（我是失主）</text> </navigator>
+<navigator url="/pages/freelist/freelist?cid={{'shi'}}" > <text>失物招领\n（我是拾主）</text> </navigator>
+<navigator url="/pages/freelist/freelist?cid={{'help'}}" > <text>悬赏互助</text> </navigator>
+<navigator url="/pages/freelist/freelist?cid={{'trade'}}" > <text>二手交易 </text></navigator>
+<navigator url="/pages/freelist/freelist?cid={{'free'}}" ><text>自由信息 </text></navigator>  
+<navigator class="int" url="/pages/upload/upload?cid={{'upload'}}"> <text>我要发布 </text></navigator>   

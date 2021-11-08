@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/free/free",
+    "pages/time/time",
+    "pages/logs/logs",
+    "pages/freelist/freelist",
+    "pages/free_detail/free_detail",
+    "pages/upload/upload",
+    "pages/manage/manage",
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/setting/setting",
+    "pages/search/search",
+    "pages/shijianguanli/shijianguanli",
+    "pages/xinxichaxun/xinxichaxun",
+    "pages/tuanduifuwu/tuanduifuwu",
+    "pages/ziyouxinxi/ziyouxinxi",
+    "pages/nidejihua/nidejihua",
+    "pages/tixing/tixing",
+    "pages/daojishi/daojishi",
+    "pages/chaxunkongjiaoshi/chaxunkongjiaoshi",
+    "pages/xuexiaofuwudianhua/xuexiaofuwudianhua",
+    "pages/xiaoyiyuanfuwu/xiaoyiyuanfuwu",
+    "pages/qingshuihe/qingshuihe",
+    "pages/shahe/shahe",
+    "pages/xuexiaoshetuan/xuexiaoshetuan",
+    "pages/youzhiwangzhan/youzhiwangzhan",
+    "pages/zhaomu/zhaomu",
+    "pages/yuezixi/yuezixi",
+    "pages/pinche/pinche",
+    "pages/shiwuzhaoling/shiwuzhaoling",
+    "pages/xuanshanghuzan/xuanshanghuzan",
+    "pages/qita/qita"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTitleText": "大创项目",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "icon/mine1.png",
+        "selectedIconPath": "icon/mine.png",
+        "text": "应用"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "iconPath": "icon/setting.png",
+        "selectedIconPath": "icon/setting1.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

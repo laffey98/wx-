@@ -1,0 +1,22 @@
+/* pages/upload/upload.wxss */
+input,
+textarea {
+    border: 2px solid #888;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    margin-top: 10rpx;
+    border-radius:2%;
+    font-size:35rpx;
+}
+.picker{
+    border-top: 5px solid rgb(240, 240, 240);
+    border-bottom: 5px solid rgb(240, 240, 240);
+}
+.picker .in{
+    margin: 20rpx;
+}
+.picker .choose {
+    font-size: 40rpx;
+    outline: lightblue 5rpx solid;
+    color: #30a5cc;
+}

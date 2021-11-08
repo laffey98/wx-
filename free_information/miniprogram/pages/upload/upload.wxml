@@ -1,0 +1,39 @@
+<!--pages/upload/upload.wxml-->
+<form class="" report-submit="false" bindsubmit="btsub" bindreset="">
+	<text>\n</text>
+	<view>
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+			<view class="picker">
+				<view class="in">请选择你要发布的板块：<text class="choose" space="ensp"> {{array[index]}} </text>
+				</view>
+			</view>
+		</picker>
+		<text>\n</text>
+	</view>
+	<input name="creater" placeholder="请输入昵称"></input>
+	<input name="title" placeholder="请输入标题"></input>
+	<!-- if -->
+	<input wx:if='{{study}}' name="time" placeholder="请输入自习时间，地点"></input>
+	<input wx:if='{{car}}' name="time" placeholder="请输入出发时间"></input>
+	<input wx:if='{{car}}' name="addr" placeholder="请输入出发地点"></input>
+	<input wx:if='{{diu}}' name="thing" placeholder="请输入丢失的物品"></input>
+	<input wx:if='{{shi}}' name="thing" placeholder="请输入拾到的物品"></input>
+	<input wx:if='{{help}}' name="price" placeholder="请输入悬赏"></input>
+	<input wx:if='{{trade}}' name="thing" placeholder="请输入物品名称"></input>
+	<input wx:if='{{trade}}' name="price" placeholder="请输入价格"></input>
+	<input name="connect" placeholder="请输入联系方式"></input>
+	<textarea name="introduce" placeholder="请输入简介"></textarea>
+	<!-- pic -->
+	<button type="default" bindtap="choosepic">
+		<view wx:if="{{yes}}">
+			该图片可上传
+		</view>
+		<view wx:else>
+			选择图片(非必选)
+		</view>
+	</button>
+	<button type="primary" form-type="submit">提交</button>
+</form>
+<view wx:if="{{load}}">
+	上传成功！！！
+</view>

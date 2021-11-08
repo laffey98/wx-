@@ -1,0 +1,74 @@
+<!--pages/free_detail/free_detail.wxml-->
+
+<!-- 信息容器 -->
+<view class="goods_info_wrap">
+	<view class="free_title">{{item.title}}</view>
+	<view class="free_creater">
+		<text space="ensp"> 发起人：{{item.creater}}</text>
+		<text class="free_time" space="ensp">      {{item.date}}</text>
+	</view>
+	<text>\n</text>
+
+	<!-- 图片容器 -->
+	<view class="goods_img_wrap">
+		<image mode="widthFix" src="{{item.pic_id}}"></image>
+	</view>
+	<text>\n\n</text>
+
+	<!-- if -->
+	<view wx:if="{{study}}" class="free_default">
+		<text class="default" space="ensp"> 自习时间，地点 </text>
+		<text>\n\n</text>{{item.time}}
+		<text>\n\n</text>
+	</view>
+
+	<view wx:if="{{car}}" class="free_default">
+		<text class="default" space="ensp"> 前往时间 </text>
+		<text>\n\n</text>{{item.time}}
+		<text>\n\n</text>
+	</view>
+	<view wx:if="{{car}}" class="free_default">
+		<text class="default" space="ensp"> 前往地点 </text>
+		<text>\n\n</text>{{item.addr}}
+		<text>\n\n</text>
+	</view>
+
+	<view wx:if="{{diu}}" class="free_default">
+		<text class="default" space="ensp"> 丢失物品 </text>
+		<text>\n\n</text>{{item.thing}}
+		<text>\n\n</text>
+	</view>
+	<view wx:if="{{shi}}" class="free_default">
+		<text class="default" space="ensp"> 拾到物品 </text>
+		<text>\n\n</text>{{item.thing}}
+		<text>\n\n</text>
+	</view>
+
+	<view wx:if="{{help}}" class="free_default">
+		<text class="default" space="ensp"> 悬赏 </text>
+		<text>\n\n</text>{{item.price}}
+		<text>\n\n</text>
+	</view>
+
+	<view wx:if="{{trade}}" class="free_default">
+		<text class="default" space="ensp"> 物品 </text>
+		<text>\n\n</text>{{item.thing}}
+		<text>\n\n</text>
+	</view>
+	<view wx:if="{{trade}}" class="free_default">
+		<text class="default" space="ensp"> 价格 </text>
+		<text>\n\n</text>{{item.price}}
+		<text>\n\n</text>
+	</view>
+	<!-- ---- -->
+	<view class="free_connect">
+		<text class="default" space="ensp"> 联系方式 </text>
+		<text>\n\n</text>{{item.connect}}
+	</view>
+	<text>\n\n</text>
+	<view class="free_intro">
+		<text class="default" space="ensp"> 简介 </text>
+		<text>\n\n</text>{{item.introduce}}
+	</view>
+	<text class="end">\n\n-end-</text>
+</view>

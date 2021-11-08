@@ -1,0 +1,29 @@
+/**index.wxss**/
+page {
+  height: 100%;
+  width: 100%;
+}
+
+navigator {
+  margin-left: 25rpx;
+  border-radius:40%;
+  margin-top: 20rpx;
+  width: 45%;
+  height: 35vw;
+  display: inline-flex;
+  text-align: center;
+  outline-style: solid;
+  outline-color: lightblue;
+}
+ 
+text {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25%;
+
+}
+
+.int {
+  outline-color: rgb(194, 69, 11);
+  border-radius: 15rpx;
+}

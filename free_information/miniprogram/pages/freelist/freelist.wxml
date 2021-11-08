@@ -1,0 +1,18 @@
+<!-- 
+<view>
+	{{cid}}
+</view> -->
+  
+  
+<navigator class="goods_item" wx:for="{{datalist}}" wx:key="_id" wx:for-item="item" url="/pages/free_detail/free_detail?id={{item._id}}&cid={{cid}}">
+	<!-- 左侧 图片容器 -->
+	<view class="goods_img_wrap"> 
+		<image mode="widthFix" src="{{item.pic_id}}"></image>
+	</view>
+	<!-- 右侧 信息容器 -->
+	<view class="goods_info_wrap">
+		<view class="free_title">{{item.title}}</view>
+		<view class="free_creater">{{item.creater}}</view>
+		<view class="free_time">{{item.date}}</view>
+	</view>
+</navigator>
